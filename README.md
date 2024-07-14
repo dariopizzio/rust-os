@@ -24,7 +24,7 @@ cargo bootimage
 qemu-system-x86_64 -drive format=raw,file=target/x86_64-rust_os/debug/bootimage-rust-os.bin
 ```
 
-Thanks to this configuration in the `./cargo/config.toml` file:
+Thanks to this configuration in the `./cargo/config.toml` file
 ```bash
 [target.'cfg(target_os = "none")']
 runner = "bootimage runner"
